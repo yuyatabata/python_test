@@ -10,10 +10,11 @@ class ThirdPartyMotherRequestSnackApi(object):
 
 # 自分たちで作成する機能
 class ChildGetSnackApi(object):
-    def __init__(self, name, hungry):
+    def __init__(self, name, hungry,time):
         self.mother_request_api = ThirdPartyMotherRequestSnackApi()
         self.name = name
         self.hungry = hungry
+        self.time = time
 
 
     # おやつを取得

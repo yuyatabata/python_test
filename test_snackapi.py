@@ -9,6 +9,8 @@ class TestThirdPartyMotherRequestSnackApi(unittest.TestCase):
 
         self.assertEqual(result.get_snack(), 'せんべい')
 
+        result.mother_request_api.request_snack.assert_called()
+
 #返答
 if __name__ == "__main__":
     unittest.main()
